@@ -1,0 +1,591 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.header {
+  border: 1px solid #000000;
+  margin: 0;
+}
+.header .container{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 80px;
+  align-items: center;
+}
+.logo{
+  width: 205px;
+  height: 52px;
+}
+.searchBar{
+  width: 316px;
+  height: 36px;
+}
+.mainContent{
+  margin: 0;
+}
+.mainContent .container{
+  height: 770px;
+  background-image: url("../img/mainBackground.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.misterMem{
+  position: absolute;
+  top: 400px;
+}
+.hero{
+  width: 370px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.hero .text{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #F0F2EB;
+  margin: 0 auto;
+}
+.title{
+  margin-top: 54px;
+  width: 370px;
+  height: 76px;
+  background: #F8CECA;
+  border: 1px solid #DF4F58;
+  border-radius: 12px;
+  display: flex;
+  align-items: center
+}
+.title .text{
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  color: #000000;
+}
+.tagline{
+  shape-outside: ellipse(); 
+  clip-path: ellipse(); 
+  width: 299px;
+  height: 160px;
+  background:  #E66971;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 28px;
+  margin: 50px auto 0;
+}
+.hero .buttonWrapper{
+  shape-outside: ellipse(); 
+  clip-path: ellipse(); 
+  width: 194px;
+  height: 121px;
+  background: #B73F39;
+  text-align: center;
+  background: #FFEAE8;
+  display: flex;
+  align-items: center;
+  margin: 153px auto 0;
+}
+.filtersButton{
+  shape-outside: ellipse(); 
+  clip-path: ellipse(); 
+  width: 192px;
+  height: 118px;
+  background: #B73F39;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+/*generate.html*/
+
+.selectionContent .container{
+  padding: 28px 42px 44px 59px;
+}
+.selectionTitle{
+  height: 48px;
+  width: 245px;
+  background: rgba(200, 200, 200, 0.58);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.selectionText{
+  width: 100%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #690A3F;
+  text-align: center;
+}
+.ocassionBar{
+  margin: 25px 0 0 -5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-radio{
+      width: 205px;
+  height: 175px;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-radio::before {
+  content: '';
+  display: inline-block;
+  width: 205px;
+  height: 175px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #FFFF;
+  border-radius: 12px;
+  background: url("../img/birthdayCat.svg");
+  background-position: center center;
+}
+.custom-radio:not(:disabled):not(:checked):hover::before {
+  border-color: #C40018;
+}
+.custom-radio:not(:disabled):active::before {
+  background-color:#C40018;
+  border-color: #C40018;
+}
+.custom-radio:focus:not(:checked)::before {
+  border-color: #C40018;
+}
+.custom-radio:checked::before {
+  border: 4px solid #C40018;
+  background-color: #C40018;
+}
+.custom-radio#wedding::before{
+  background: url("../img/wedding.svg");
+  background-position: center center;
+}
+  .custom-radio#newborn::before{
+  background: url("../img/newborn.svg");
+  background-position: center center;
+}
+  .custom-radio#valentin::before{
+  background: url("../img/valentina.svg");
+  background-position: center center;
+}
+  .custom-radio#xmas::before{
+  background: url("../img/xmas.svg");
+  background-position: center center;
+}
+.selectionContent .text{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #690A3F;
+}
+.selectionContent .ocassionBar .text{
+  width: 215px;
+  text-align: center;
+}
+.sexBar .custom-radio{
+  width: 90px;
+  height: 130px;
+}
+.sexBar .custom-radio::before{
+  width: 90px;
+  height: 130px;
+}
+.custom-radio#woman::before{
+background: url("../img/woman.svg");
+background-repeat: no-repeat;
+background-position: center center;
+}
+.custom-radio#man::before{
+background: url("../img/man.svg");
+background-repeat: no-repeat;
+background-position: center center;
+}
+.sexBar{
+  margin: 31px 0 0 89px;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+.selectionContent .sexBar .text{
+  width: 90px;
+  text-align: center;
+}
+.sexSelect{
+  margin:26px 0 0 103px;
+}
+.ageBar .custom-radio::before{
+width: 159px;
+height: 61px;
+border-radius: 50%;
+background: url("../img/ageEllipse.svg");
+background-repeat: no-repeat;
+background-position: center center;
+}
+.ageBar .custom-radio{
+width: 159px;
+height: 61px;
+}
+.ageBar .text{
+  position: absolute;
+}
+.ageWrapper{
+  width: 160px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.agesContainer{
+  width: 527px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.ageBar{
+  width: 527px;
+  position: absolute;
+  right: 131px;
+  top: 445px;
+}
+.ageSelect{
+  margin: 0 auto 21px;
+}
+.generateButton{
+  width: 251px;
+  height: 72px;
+  background: rgba(105, 10, 63, 0.8);
+  border-radius: 12px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin: 0 auto 45px;
+}
+.link{
+  position: absolute;
+  right: 44px;
+  bottom: -50px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #000000;
+}
+
+
+
+
+/*giftsMenu.html*/
+
+.giftsContent{
+  padding: 16px 78px 80px 78px;
+  background: rgba(196, 196, 196, 0.2);
+  height: 50vw;
+}
+.menuBar{
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.giftsContent .menuBar{
+  padding: 0 50px 0 50px;
+  background: #DF4F58;
+  border-radius: 20px;
+}
+.menuBar .menuLink{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #F0F2EB;
+  text-decoration: none;
+}
+.giftTitle{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.giftChoose{
+  display: inline-block;
+  text-align: center;
+  width: 151px;
+  height: 184px;
+}
+.giftType{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: black;
+}
+.giftsBar{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+
+
+/*forHer.html*/
+
+.herContent{
+  padding:  25px 80px 100px 80px;
+}
+.herContent .container{
+  text-align: center;
+}
+.herContent .menuBar{
+  margin: 0;
+}
+.herContent .menuBar .menuLink{
+  color: black;
+  font-weight: normal;
+}
+.banner{
+  margin-top: 12px;
+}
+.filterTitle{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
+}
+.filter{
+  width: 196px;
+  height: 218px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+  left: 0;
+}
+.blackStripe{
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  margin-top: -15px;
+}
+.filter .menuLink{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+.productContainer{
+  position: absolute;
+  left: 400px;
+  top: 285px;
+  width: 1000px;
+  flex-wrap: wrap;
+}
+.productContainer .filterTitle{
+  text-align: left;
+}
+.productContainer .products{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+@media only screen
+and (min-width: 0px)
+and (max-width: 1380px){
+  .productContainer{
+    width: 50vw;
+  }
+}
+@media only screen
+and (min-width: 0px)
+and (max-width: 1100px){
+  .banner{
+    display: none;
+  }
+.productContainer{
+  top: 150px;
+}
+
+}
+@media only screen
+and (min-width: 0px)
+and (max-width: 960px){
+.productContainer{
+  left: 0;
+  width: 100%;
+  top: 100px;
+}
+.productContainer .products{
+  text-align: center;
+  flex-direction: column;
+}
+.productContainer .productWrapper{
+  left:0px ;
+  margin: 0 auto;
+}
+.header{
+  display: none;
+}
+.productContainer .filterTitle{
+  text-align: center;
+}
+.filter{
+  display: none;
+}
+}
+
+
+
+
+
+
+
+/*result....html*/
+.congratBar{
+  width: 1206px;
+  height: 100px;
+  background: rgba(234, 204, 206, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  margin: 0 auto;
+}
+.congratText{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+}
+.generatedProductContainer{
+  position: absolute;
+  left: 360px;
+  top: 245px;
+}
+.productLinks{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.websiteLink{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.birthdayres{
+  padding: 13px 91px 96px 64px;
+}
+.weddingres{
+  padding: 13px 79px 96px 64px;
+}
+.newbornres{
+  padding: 13px 38px 96px 64px;
+}
+.valentinres{
+  padding: 13px 84px 96px 71px;
+}
+.newYearres{
+  padding: 13px 62px 96px 58px;
+}

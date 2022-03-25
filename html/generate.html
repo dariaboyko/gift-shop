@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title></title>
+</head>
+<body>
+	<header class="header">
+            <div class="container">
+                <img class ="logo" src="../img/logo.svg">
+                <img class="searchBar" src="../img/searchBar.svg">
+            </div>
+    </header>
+    <main class="selectionContent">
+        <div class="container">
+            <div class="selectionTitle"><span class="selectionText">Select an occassion </span></div>
+            <div class="ocassionBar">
+                <input class="custom-radio" name="ocassion" type="radio" id="birthday" value="birthday">
+                <input class="custom-radio" name="ocassion" type="radio" id="wedding" value="wedding">
+                <input class="custom-radio" name="ocassion" type="radio" id="newborn" value="newborn">
+                <input class="custom-radio" name="ocassion" type="radio" id="valentin" value="valentin">
+                <input class="custom-radio" name="ocassion" type="radio" id="xmas" value="xmas">
+            </div>
+            <div class="ocassionBar">
+                <span class="text">Birthday</span>
+                <span class="text">Wedding</span>
+                <span class="text">Newborn</span>
+                <span class="text">St. Valentine’s Day</span>
+                <span class="text">New Year/Christmas</span>
+            </div>
+            <div class="selectionTitle sexSelect"><span class="selectionText">Select a sex</span></div>
+            <div class="sexBar">
+                <input class="custom-radio" name="sex" type="radio" id="woman" value="woman">
+                <input class="custom-radio" name="sex" type="radio" id="man" value="man">
+            </div>
+            <div class="sexBar">
+                <span class="text">Female</span>
+                <span class="text">Male</span>
+            </div>
+            <div class="ageBar">
+                <div class="selectionTitle ageSelect"><span class="selectionText">Select an age</span></div>
+                <div class="agesContainer">
+                    <span class="ageWrapper">
+                        <span class="text">0-12</span>
+                        <input class="custom-radio" name="age" type="radio" id="0-12" value="0-12">
+                    </span>
+                    <span class="ageWrapper">
+                        <span class="text">12-18</span>
+                        <input class="custom-radio" name="age" type="radio" id="12-18" value="12-18">
+                    </span>
+                    <span class="ageWrapper">
+                        <span class="text">18-25</span>
+                        <input class="custom-radio" name="age" type="radio" id="18-25" value="18-25">
+                    </span>
+                </div>
+                <div class="agesContainer">
+                    <span class="ageWrapper">
+                        <span class="text">25-35</span>
+                        <input class="custom-radio" name="age" type="radio" id="25-35" value="25-35">
+                    </span>
+                    <span class="ageWrapper">
+                        <span class="text">35-50</span>
+                        <input class="custom-radio" name="age" type="radio" id="35-50" value="35-50">
+                    </span>
+                    <span class="ageWrapper">
+                        <span class="text">50-99</span>
+                        <input class="custom-radio" name="age" type="radio" id="50-99" value="50-99">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <button class="generateButton" id ="generatorButton">Generate</button>
+        <a href="" class="link">Choose a gift with no filters</a>
+    </main>
+</body>
+</html>
